@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1638495023030,
-      "created": 1638495023030,
+      "updated": 1638496254093,
+      "created": 1638496254093,
       "parent": null,
       "children": [],
       "data": {}
@@ -27,16 +27,16 @@
       "desc": "",
       "links": [],
       "anchors": {
-        "welcome-to-dendron": {
+        "groupme-api-notes": {
           "type": "header",
-          "text": "Welcome to Dendron",
-          "value": "welcome-to-dendron",
+          "text": "GroupMe API Notes",
+          "value": "groupme-api-notes",
           "line": 7,
           "column": 0
         }
       },
       "fname": "root",
-      "updated": 1638476729257,
+      "updated": 1638496239066,
       "created": 1638476729257,
       "parent": null,
       "children": [
@@ -49,7 +49,7 @@
         "ErfIZMzFqiWTHR5pDIkZA"
       ],
       "data": {},
-      "contentHash": "90d9a7435fc2f0a0c53ecaf0eb0d06d5",
+      "contentHash": "4aaae18eacf93f60e182aa855212677a",
       "custom": {
         "nav_order": 0,
         "permalink": "/"
@@ -1040,16 +1040,16 @@
       "desc": "",
       "links": [],
       "anchors": {
-        "welcome-to-dendron": {
+        "groupme-api-notes": {
           "type": "header",
-          "text": "Welcome to Dendron",
-          "value": "welcome-to-dendron",
+          "text": "GroupMe API Notes",
+          "value": "groupme-api-notes",
           "line": 7,
           "column": 0
         }
       },
       "fname": "root",
-      "updated": 1638476729257,
+      "updated": 1638496239066,
       "created": 1638476729257,
       "parent": null,
       "children": [
@@ -1062,12 +1062,12 @@
         "ErfIZMzFqiWTHR5pDIkZA"
       ],
       "data": {},
-      "contentHash": "90d9a7435fc2f0a0c53ecaf0eb0d06d5",
+      "contentHash": "4aaae18eacf93f60e182aa855212677a",
       "custom": {
         "nav_order": 0,
         "permalink": "/"
       },
-      "body": "# Welcome to Dendron\n\nThis is the root of your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top.\n"
+      "body": "# GroupMe API Notes\n\nThis site is a public repository of my notes and research on the GroupMe API throughout the development of [node-groupme](https://github.com/groupme-js/node-groupme).\n\nHave a look around by clicking on whatever piques your interest in the sidebar, or check out the \"children\" list below to start exploring.\n"
     }
   ],
   "noteIndex": {
@@ -1080,16 +1080,16 @@
     "desc": "",
     "links": [],
     "anchors": {
-      "welcome-to-dendron": {
+      "groupme-api-notes": {
         "type": "header",
-        "text": "Welcome to Dendron",
-        "value": "welcome-to-dendron",
+        "text": "GroupMe API Notes",
+        "value": "groupme-api-notes",
         "line": 7,
         "column": 0
       }
     },
     "fname": "root",
-    "updated": 1638476729257,
+    "updated": 1638496239066,
     "created": 1638476729257,
     "parent": null,
     "children": [
@@ -1102,12 +1102,12 @@
       "ErfIZMzFqiWTHR5pDIkZA"
     ],
     "data": {},
-    "contentHash": "90d9a7435fc2f0a0c53ecaf0eb0d06d5",
+    "contentHash": "4aaae18eacf93f60e182aa855212677a",
     "custom": {
       "nav_order": 0,
       "permalink": "/"
     },
-    "body": "# Welcome to Dendron\n\nThis is the root of your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top.\n"
+    "body": "# GroupMe API Notes\n\nThis site is a public repository of my notes and research on the GroupMe API throughout the development of [node-groupme](https://github.com/groupme-js/node-groupme).\n\nHave a look around by clicking on whatever piques your interest in the sidebar, or check out the \"children\" list below to start exploring.\n"
   },
   "vaults": [
     {
