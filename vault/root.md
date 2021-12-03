@@ -2,9 +2,11 @@
 id: BtqrGXASMeX2jK83wQjZK
 title: Root
 desc: ''
-updated: 1638476729257
+updated: 1638496239066
 created: 1638476729257
 ---
-# Welcome to Dendron
+# GroupMe API Notes
 
-This is the root of your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top.
+This site is a public repository of my notes and research on the GroupMe API throughout the development of [node-groupme](https://github.com/groupme-js/node-groupme).
+
+Have a look around by clicking on whatever piques your interest in the sidebar, or check out the "children" list below to start exploring.
