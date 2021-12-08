@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1638496254093,
-      "created": 1638496254093,
+      "updated": 1638936178569,
+      "created": 1638936178569,
       "parent": null,
       "children": [],
       "data": {}
@@ -73,13 +73,13 @@
           "position": {
             "start": {
               "line": 1,
-              "column": 49,
-              "offset": 48
+              "column": 53,
+              "offset": 52
             },
             "end": {
               "line": 1,
-              "column": 63,
-              "offset": 62
+              "column": 67,
+              "offset": 66
             },
             "indent": []
           },
@@ -115,13 +115,13 @@
           "position": {
             "start": {
               "line": 3,
-              "column": 65,
-              "offset": 177
+              "column": 69,
+              "offset": 185
             },
             "end": {
               "line": 3,
-              "column": 79,
-              "offset": 191
+              "column": 83,
+              "offset": 199
             },
             "indent": []
           },
@@ -136,13 +136,13 @@
           "position": {
             "start": {
               "line": 1,
-              "column": 68,
-              "offset": 67
+              "column": 72,
+              "offset": 71
             },
             "end": {
               "line": 1,
-              "column": 76,
-              "offset": 75
+              "column": 80,
+              "offset": 79
             },
             "indent": []
           },
@@ -157,13 +157,13 @@
           "position": {
             "start": {
               "line": 1,
-              "column": 50,
-              "offset": 49
+              "column": 54,
+              "offset": 53
             },
             "end": {
               "line": 1,
-              "column": 58,
-              "offset": 57
+              "column": 62,
+              "offset": 61
             },
             "indent": []
           },
@@ -201,13 +201,13 @@
           "position": {
             "start": {
               "line": 1,
-              "column": 50,
-              "offset": 49
+              "column": 54,
+              "offset": 53
             },
             "end": {
               "line": 1,
-              "column": 58,
-              "offset": 57
+              "column": 62,
+              "offset": 61
             },
             "indent": []
           },
@@ -229,13 +229,13 @@
           "position": {
             "start": {
               "line": 1,
-              "column": 64,
-              "offset": 63
+              "column": 68,
+              "offset": 67
             },
             "end": {
               "line": 1,
-              "column": 80,
-              "offset": 79
+              "column": 84,
+              "offset": 83
             },
             "indent": []
           },
@@ -258,12 +258,12 @@
             "start": {
               "line": 3,
               "column": 47,
-              "offset": 128
+              "offset": 132
             },
             "end": {
               "line": 3,
               "column": 73,
-              "offset": 154
+              "offset": 158
             },
             "indent": []
           },
@@ -289,6 +289,27 @@
               "line": 1,
               "column": 69,
               "offset": 68
+            },
+            "indent": []
+          },
+          "value": "message"
+        },
+        {
+          "from": {
+            "fname": "chat",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 24,
+              "column": 4,
+              "offset": 635
+            },
+            "end": {
+              "line": 24,
+              "column": 15,
+              "offset": 646
             },
             "indent": []
           },
@@ -335,16 +356,235 @@
             "indent": []
           },
           "value": "message"
+        },
+        {
+          "from": {
+            "fname": "group.event",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 93,
+              "offset": 92
+            },
+            "end": {
+              "line": 1,
+              "column": 113,
+              "offset": 112
+            },
+            "indent": []
+          },
+          "value": "message"
+        },
+        {
+          "from": {
+            "fname": "message.chat-message",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 2,
+              "column": 25,
+              "offset": 25
+            },
+            "end": {
+              "line": 2,
+              "column": 36,
+              "offset": 36
+            },
+            "indent": []
+          },
+          "value": "message"
         }
       ],
-      "anchors": {},
+      "anchors": {
+        "message-types": {
+          "type": "header",
+          "text": "Message Types",
+          "value": "message-types",
+          "line": 11,
+          "column": 0
+        }
+      },
       "fname": "message",
-      "updated": 1638482595504,
+      "updated": 1638905068982,
       "created": 1638478165665,
       "parent": "BtqrGXASMeX2jK83wQjZK",
+      "children": [
+        "TC2DDp9795LJS0wkf4GkZ",
+        "tvVc8afgHTuCriuKDgiSg"
+      ],
+      "data": {},
+      "contentHash": "626797dbbb33620b2b2acc28ccaa0152",
+      "custom": {}
+    },
+    "tvVc8afgHTuCriuKDgiSg": {
+      "id": "tvVc8afgHTuCriuKDgiSg",
+      "title": "Group Message",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "message.group-message",
+      "updated": 1638905281313,
+      "created": 1638905281313,
+      "parent": "BR3F8919OQELtGFsOVIjB",
       "children": [],
       "data": {},
-      "contentHash": "000397ec018dba7aff9ea29131dd4de9",
+      "contentHash": "43126819f442250176ac90a012b19cd3",
+      "custom": {}
+    },
+    "TC2DDp9795LJS0wkf4GkZ": {
+      "id": "TC2DDp9795LJS0wkf4GkZ",
+      "title": "Chat Message",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "message.chat-message",
+            "id": "TC2DDp9795LJS0wkf4GkZ",
+            "vaultName": "vault"
+          },
+          "value": "message",
+          "alias": "message",
+          "position": {
+            "start": {
+              "line": 2,
+              "column": 25,
+              "offset": 25
+            },
+            "end": {
+              "line": 2,
+              "column": 36,
+              "offset": 36
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "message"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "message.chat-message",
+            "id": "TC2DDp9795LJS0wkf4GkZ",
+            "vaultName": "vault"
+          },
+          "value": "chat",
+          "alias": "chat",
+          "position": {
+            "start": {
+              "line": 2,
+              "column": 47,
+              "offset": 47
+            },
+            "end": {
+              "line": 2,
+              "column": 55,
+              "offset": 55
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "chat"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "message.chat-message",
+            "id": "TC2DDp9795LJS0wkf4GkZ",
+            "vaultName": "vault"
+          },
+          "value": "attachment",
+          "alias": "attachment",
+          "position": {
+            "start": {
+              "line": 25,
+              "column": 4,
+              "offset": 592
+            },
+            "end": {
+              "line": 25,
+              "column": 18,
+              "offset": 606
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "attachment"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "message.chat-message",
+            "id": "TC2DDp9795LJS0wkf4GkZ",
+            "vaultName": "vault"
+          },
+          "value": "group.event",
+          "alias": "group.event",
+          "position": {
+            "start": {
+              "line": 26,
+              "column": 4,
+              "offset": 610
+            },
+            "end": {
+              "line": 26,
+              "column": 19,
+              "offset": 625
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "group.event"
+          }
+        }
+      ],
+      "anchors": {
+        "apijson-representation": {
+          "type": "header",
+          "text": "API/JSON Representation",
+          "value": "apijson-representation",
+          "line": 10,
+          "column": 0
+        },
+        "representation-in": {
+          "type": "header",
+          "text": "Representation in",
+          "value": "representation-in",
+          "line": 34,
+          "column": 0
+        }
+      },
+      "fname": "message.chat-message",
+      "updated": 1638909139469,
+      "created": 1638905264133,
+      "parent": "BR3F8919OQELtGFsOVIjB",
+      "children": [],
+      "data": {},
+      "contentHash": "f6dec78f76e05201c87d34f8c5290faa",
       "custom": {}
     },
     "ORmwtXvQkZd5Qs4hm7qAE": {
@@ -368,13 +608,13 @@
           "position": {
             "start": {
               "line": 1,
-              "column": 68,
-              "offset": 67
+              "column": 72,
+              "offset": 71
             },
             "end": {
               "line": 1,
-              "column": 76,
-              "offset": 75
+              "column": 80,
+              "offset": 79
             },
             "indent": []
           },
@@ -396,13 +636,13 @@
           "position": {
             "start": {
               "line": 1,
-              "column": 83,
-              "offset": 82
+              "column": 87,
+              "offset": 86
             },
             "end": {
               "line": 1,
-              "column": 92,
-              "offset": 91
+              "column": 96,
+              "offset": 95
             },
             "indent": []
           },
@@ -421,27 +661,63 @@
           "position": {
             "start": {
               "line": 1,
-              "column": 93,
-              "offset": 92
+              "column": 97,
+              "offset": 96
             },
             "end": {
               "line": 1,
-              "column": 111,
-              "offset": 110
+              "column": 115,
+              "offset": 114
+            },
+            "indent": []
+          },
+          "value": "member"
+        },
+        {
+          "from": {
+            "fname": "group",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 59,
+              "column": 4,
+              "offset": 1597
+            },
+            "end": {
+              "line": 59,
+              "column": 14,
+              "offset": 1607
             },
             "indent": []
           },
           "value": "member"
         }
       ],
-      "anchors": {},
+      "anchors": {
+        "apijson-representation": {
+          "type": "header",
+          "text": "API/JSON Representation",
+          "value": "apijson-representation",
+          "line": 9,
+          "column": 0
+        },
+        "representation-in": {
+          "type": "header",
+          "text": "Representation in",
+          "value": "representation-in",
+          "line": 29,
+          "column": 0
+        }
+      },
       "fname": "member",
-      "updated": 1638482552696,
+      "updated": 1638904578137,
       "created": 1638478384396,
       "parent": "BtqrGXASMeX2jK83wQjZK",
       "children": [],
       "data": {},
-      "contentHash": "894eadfde75592ef99456e890cac63f2",
+      "contentHash": "9c454a85ae7634d66759cc592fc7e5b3",
       "custom": {}
     },
     "UfTK0Ggs4Dxy7lLZfveNO": {
@@ -465,13 +741,13 @@
           "position": {
             "start": {
               "line": 1,
-              "column": 56,
-              "offset": 55
+              "column": 60,
+              "offset": 59
             },
             "end": {
               "line": 1,
-              "column": 72,
-              "offset": 71
+              "column": 76,
+              "offset": 75
             },
             "indent": []
           },
@@ -493,13 +769,13 @@
           "position": {
             "start": {
               "line": 1,
-              "column": 93,
-              "offset": 92
+              "column": 97,
+              "offset": 96
             },
             "end": {
               "line": 1,
-              "column": 111,
-              "offset": 110
+              "column": 115,
+              "offset": 114
             },
             "indent": []
           },
@@ -521,13 +797,13 @@
           "position": {
             "start": {
               "line": 3,
-              "column": 28,
-              "offset": 140
+              "column": 32,
+              "offset": 148
             },
             "end": {
               "line": 3,
-              "column": 44,
-              "offset": 156
+              "column": 48,
+              "offset": 164
             },
             "indent": []
           },
@@ -549,13 +825,13 @@
           "position": {
             "start": {
               "line": 3,
-              "column": 65,
-              "offset": 177
+              "column": 69,
+              "offset": 185
             },
             "end": {
               "line": 3,
-              "column": 79,
-              "offset": 191
+              "column": 83,
+              "offset": 199
             },
             "indent": []
           },
@@ -563,6 +839,62 @@
           "sameFile": false,
           "to": {
             "fname": "user"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "group",
+            "id": "UfTK0Ggs4Dxy7lLZfveNO",
+            "vaultName": "vault"
+          },
+          "value": "member",
+          "alias": "member",
+          "position": {
+            "start": {
+              "line": 59,
+              "column": 4,
+              "offset": 1597
+            },
+            "end": {
+              "line": 59,
+              "column": 14,
+              "offset": 1607
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "member"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "group",
+            "id": "UfTK0Ggs4Dxy7lLZfveNO",
+            "vaultName": "vault"
+          },
+          "value": "attachment",
+          "alias": "attachment",
+          "position": {
+            "start": {
+              "line": 60,
+              "column": 4,
+              "offset": 1611
+            },
+            "end": {
+              "line": 60,
+              "column": 18,
+              "offset": 1625
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "attachment"
           }
         },
         {
@@ -595,27 +927,219 @@
           "position": {
             "start": {
               "line": 1,
-              "column": 83,
-              "offset": 82
+              "column": 87,
+              "offset": 86
             },
             "end": {
               "line": 1,
-              "column": 92,
-              "offset": 91
+              "column": 96,
+              "offset": 95
+            },
+            "indent": []
+          },
+          "value": "group"
+        },
+        {
+          "from": {
+            "fname": "group.event",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 52,
+              "offset": 51
+            },
+            "end": {
+              "line": 1,
+              "column": 61,
+              "offset": 60
             },
             "indent": []
           },
           "value": "group"
         }
       ],
-      "anchors": {},
+      "anchors": {
+        "apijson-representation": {
+          "type": "header",
+          "text": "API/JSON Representation",
+          "value": "apijson-representation",
+          "line": 11,
+          "column": 0
+        },
+        "representation-in": {
+          "type": "header",
+          "text": "Representation in",
+          "value": "representation-in",
+          "line": 68,
+          "column": 0
+        }
+      },
       "fname": "group",
-      "updated": 1638481661707,
+      "updated": 1638904160141,
       "created": 1638477636926,
       "parent": "BtqrGXASMeX2jK83wQjZK",
+      "children": [
+        "O2VnKphZ7jSbMIynkTn6b"
+      ],
+      "data": {},
+      "contentHash": "297792229ef09e72ba0697ef1dac33f5",
+      "custom": {}
+    },
+    "O2VnKphZ7jSbMIynkTn6b": {
+      "id": "O2VnKphZ7jSbMIynkTn6b",
+      "title": "Event",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "group.event",
+            "id": "O2VnKphZ7jSbMIynkTn6b",
+            "vaultName": "vault"
+          },
+          "value": "group",
+          "alias": "group",
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 52,
+              "offset": 51
+            },
+            "end": {
+              "line": 1,
+              "column": 61,
+              "offset": 60
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "group"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "group.event",
+            "id": "O2VnKphZ7jSbMIynkTn6b",
+            "vaultName": "vault"
+          },
+          "value": "message",
+          "alias": "Messages",
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 93,
+              "offset": 92
+            },
+            "end": {
+              "line": 1,
+              "column": 113,
+              "offset": 112
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "message"
+          }
+        },
+        {
+          "from": {
+            "fname": "message.chat-message",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 26,
+              "column": 4,
+              "offset": 610
+            },
+            "end": {
+              "line": 26,
+              "column": 19,
+              "offset": 625
+            },
+            "indent": []
+          },
+          "value": "group.event"
+        }
+      ],
+      "anchors": {
+        "apijson-representation": {
+          "type": "header",
+          "text": "API/JSON Representation",
+          "value": "apijson-representation",
+          "line": 9,
+          "column": 0
+        },
+        "event-types": {
+          "type": "header",
+          "text": "Event types",
+          "value": "event-types",
+          "line": 18,
+          "column": 0
+        },
+        "bots": {
+          "type": "header",
+          "text": "Bots",
+          "value": "bots",
+          "line": 21,
+          "column": 0
+        },
+        "calendar": {
+          "type": "header",
+          "text": "Calendar",
+          "value": "calendar",
+          "line": 28,
+          "column": 0
+        },
+        "group": {
+          "type": "header",
+          "text": "Group",
+          "value": "group",
+          "line": 53,
+          "column": 0
+        },
+        "members": {
+          "type": "header",
+          "text": "Members",
+          "value": "members",
+          "line": 86,
+          "column": 0
+        },
+        "message": {
+          "type": "header",
+          "text": "Message",
+          "value": "message",
+          "line": 109,
+          "column": 0
+        },
+        "polls": {
+          "type": "header",
+          "text": "Polls",
+          "value": "polls",
+          "line": 116,
+          "column": 0
+        }
+      },
+      "fname": "group.event",
+      "updated": 1638932812446,
+      "created": 1638909094605,
+      "parent": "UfTK0Ggs4Dxy7lLZfveNO",
       "children": [],
       "data": {},
-      "contentHash": "42313ef36b538a3c4616cc6c630b203e",
+      "contentHash": "c8fcfee5b2a538bae7c1412d7927fd63",
       "custom": {}
     },
     "ccuZY1G3VSd9q0MSiTnft": {
@@ -776,13 +1300,13 @@
           "position": {
             "start": {
               "line": 1,
-              "column": 20,
-              "offset": 19
+              "column": 24,
+              "offset": 23
             },
             "end": {
               "line": 1,
-              "column": 36,
-              "offset": 35
+              "column": 40,
+              "offset": 39
             },
             "indent": []
           },
@@ -797,13 +1321,13 @@
           "position": {
             "start": {
               "line": 1,
-              "column": 56,
-              "offset": 55
+              "column": 60,
+              "offset": 59
             },
             "end": {
               "line": 1,
-              "column": 72,
-              "offset": 71
+              "column": 76,
+              "offset": 75
             },
             "indent": []
           },
@@ -818,13 +1342,13 @@
           "position": {
             "start": {
               "line": 3,
-              "column": 28,
-              "offset": 140
+              "column": 32,
+              "offset": 148
             },
             "end": {
               "line": 3,
-              "column": 44,
-              "offset": 156
+              "column": 48,
+              "offset": 164
             },
             "indent": []
           },
@@ -839,13 +1363,13 @@
           "position": {
             "start": {
               "line": 1,
-              "column": 64,
-              "offset": 63
+              "column": 68,
+              "offset": 67
             },
             "end": {
               "line": 1,
-              "column": 80,
-              "offset": 79
+              "column": 84,
+              "offset": 83
             },
             "indent": []
           },
@@ -883,13 +1407,13 @@
           "position": {
             "start": {
               "line": 1,
-              "column": 20,
-              "offset": 19
+              "column": 24,
+              "offset": 23
             },
             "end": {
               "line": 1,
-              "column": 36,
-              "offset": 35
+              "column": 40,
+              "offset": 39
             },
             "indent": []
           },
@@ -911,13 +1435,13 @@
           "position": {
             "start": {
               "line": 1,
-              "column": 49,
-              "offset": 48
+              "column": 53,
+              "offset": 52
             },
             "end": {
               "line": 1,
-              "column": 63,
-              "offset": 62
+              "column": 67,
+              "offset": 66
             },
             "indent": []
           },
@@ -925,6 +1449,34 @@
           "sameFile": false,
           "to": {
             "fname": "user"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "chat",
+            "id": "1VSZbfRlK043L5qm9ct11",
+            "vaultName": "vault"
+          },
+          "value": "message",
+          "alias": "message",
+          "position": {
+            "start": {
+              "line": 24,
+              "column": 4,
+              "offset": 635
+            },
+            "end": {
+              "line": 24,
+              "column": 15,
+              "offset": 646
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "message"
           }
         },
         {
@@ -947,16 +1499,52 @@
             "indent": []
           },
           "value": "chat"
+        },
+        {
+          "from": {
+            "fname": "message.chat-message",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 2,
+              "column": 47,
+              "offset": 47
+            },
+            "end": {
+              "line": 2,
+              "column": 55,
+              "offset": 55
+            },
+            "indent": []
+          },
+          "value": "chat"
         }
       ],
-      "anchors": {},
+      "anchors": {
+        "apijson-representation": {
+          "type": "header",
+          "text": "API/JSON Representation",
+          "value": "apijson-representation",
+          "line": 11,
+          "column": 0
+        },
+        "representation-in": {
+          "type": "header",
+          "text": "Representation in",
+          "value": "representation-in",
+          "line": 32,
+          "column": 0
+        }
+      },
       "fname": "chat",
-      "updated": 1638482776942,
+      "updated": 1638904252603,
       "created": 1638477655210,
       "parent": "BtqrGXASMeX2jK83wQjZK",
       "children": [],
       "data": {},
-      "contentHash": "623665e0234e2e41d07985f70e66cc7c",
+      "contentHash": "85357ae8a5bb574ece6070038dd98f4b",
       "custom": {}
     },
     "HiWRA7xMsjTJ0cFnQPkf1": {
@@ -998,6 +1586,27 @@
         },
         {
           "from": {
+            "fname": "group",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 60,
+              "column": 4,
+              "offset": 1611
+            },
+            "end": {
+              "line": 60,
+              "column": 18,
+              "offset": 1625
+            },
+            "indent": []
+          },
+          "value": "attachment"
+        },
+        {
+          "from": {
             "fname": "message",
             "vaultName": "vault"
           },
@@ -1006,12 +1615,33 @@
             "start": {
               "line": 3,
               "column": 47,
-              "offset": 128
+              "offset": 132
             },
             "end": {
               "line": 3,
               "column": 73,
-              "offset": 154
+              "offset": 158
+            },
+            "indent": []
+          },
+          "value": "attachment"
+        },
+        {
+          "from": {
+            "fname": "message.chat-message",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 25,
+              "column": 4,
+              "offset": 592
+            },
+            "end": {
+              "line": 25,
+              "column": 18,
+              "offset": 606
             },
             "indent": []
           },

@@ -1,0 +1,272 @@
+<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><link rel="icon" href="/favicon.ico"/><title>Event</title><meta name="robots" content="index,follow"/><meta name="googlebot" content="index,follow"/><meta name="description" content="Personal knowledge space"/><meta property="og:title" content="Event"/><meta property="og:description" content="Personal knowledge space"/><meta property="og:url" content="https://not-so-smart.github.io/groupme-notes/notes/O2VnKphZ7jSbMIynkTn6b/"/><meta property="og:type" content="article"/><meta property="article:published_time" content="12/7/2021"/><meta property="article:modified_time" content="12/8/2021"/><link rel="canonical" href="https://not-so-smart.github.io/groupme-notes/notes/O2VnKphZ7jSbMIynkTn6b/"/><meta name="next-head-count" content="14"/><link rel="preload" href="/groupme-notes/_next/static/css/ac036084b03030e0.css" as="style"/><link rel="stylesheet" href="/groupme-notes/_next/static/css/ac036084b03030e0.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/groupme-notes/_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script><script src="/groupme-notes/_next/static/chunks/webpack-4edea727c3a0d908.js" defer=""></script><script src="/groupme-notes/_next/static/chunks/framework-dc33c0b5493501f0.js" defer=""></script><script src="/groupme-notes/_next/static/chunks/main-d44666e5d7c8bf96.js" defer=""></script><script src="/groupme-notes/_next/static/chunks/pages/_app-041ac764a5634a9b.js" defer=""></script><script src="/groupme-notes/_next/static/chunks/155-4c900bf5c5278e05.js" defer=""></script><script src="/groupme-notes/_next/static/chunks/pages/notes/%5Bid%5D-ebe33fbe56ae1215.js" defer=""></script><script src="/groupme-notes/_next/static/He098qOjAA6fjrBkBo0y1/_buildManifest.js" defer=""></script><script src="/groupme-notes/_next/static/He098qOjAA6fjrBkBo0y1/_ssgManifest.js" defer=""></script><script src="/groupme-notes/_next/static/He098qOjAA6fjrBkBo0y1/_middlewareManifest.js" defer=""></script></head><body><div id="__next"><section class="ant-layout" style="width:100%;min-height:100%"><header class="ant-layout-header" style="position:fixed;isolation:isolate;z-index:1;width:100%;border-bottom:1px solid #d4dadf;height:64px;padding:0 24px 0 2px"><div class="ant-row ant-row-center" style="max-width:992px;justify-content:space-between;margin:0 auto"><div class="ant-col"></div><div class="ant-col gutter-row ant-col-xs-0 ant-col-sm-20 ant-col-md-20 ant-col-lg-19"></div><div style="margin-left:4px;display:none;align-items:center;justify-content:center" class="ant-col ant-col-xs-4 ant-col-sm-4 ant-col-md-0 ant-col-lg-0"><span role="img" aria-label="menu" style="font-size:24px" tabindex="-1" class="anticon anticon-menu"><svg viewBox="64 64 896 896" focusable="false" data-icon="menu" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg></span></div></div></header><section class="ant-layout site-layout" style="margin-top:64px"><section class="ant-layout site-layout" style="flex-direction:row"><section class="ant-layout site-layout-sidebar" style="flex:0 0 auto;width:calc((100% - 992px) / 2 + 200px);min-width:200px;padding-left:calc((100% - 992px) / 2)"><aside class="ant-layout-sider ant-layout-sider-dark" style="position:fixed;overflow:auto;height:calc(100vh - 64px);flex:0 0 200px;max-width:200px;min-width:200px;width:200px"><div class="ant-layout-sider-children"></div></aside></section><section class="ant-layout side-layout-main" style="max-width:960px;display:initial"><main class="ant-layout-content main-content" role="main" style="padding:0 24px"><div class="ant-row"><div class="ant-col ant-col-24"><div class="ant-row" style="margin-left:-10px;margin-right:-10px"><div style="padding-left:10px;padding-right:10px" class="ant-col ant-col-xs-24 ant-col-md-20"><div><h1 id="event"><a aria-hidden="true" class="anchor-heading" href="#event"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Event</h1>
+<p>An <strong>event</strong> describes something that happens in a <a href="/groupme-notes/notes/UfTK0Ggs4Dxy7lLZfveNO">Group</a>. Events are emitted in special <a href="/groupme-notes/notes/BR3F8919OQELtGFsOVIjB">Messages</a> sent by the system.</p>
+<h2 id="apijson-representation"><a aria-hidden="true" class="anchor-heading" href="#apijson-representation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>API/JSON Representation</h2>
+<pre class="language-ts"><code class="language-ts"><span class="token keyword module">export</span> <span class="token keyword">interface</span> <span class="token class-name"><span class="token maybe-class-name">APIEvent</span></span> <span class="token punctuation">{</span>
+    type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    data<span class="token operator">:</span> <span class="token known-class-name class-name">Object</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The <code>data</code> field is an object describing the details of the event. The structure of this object changes depending on the event type. You can find a list of known event types and their corresponding data object structures below.</p>
+<h2 id="event-types"><a aria-hidden="true" class="anchor-heading" href="#event-types"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Event types</h2>
+<p>This list is by no means exhaustive. It contains only the events that were observed in my groups whenever this list was made (circa mid-2021).</p>
+<h3 id="bots"><a aria-hidden="true" class="anchor-heading" href="#bots"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Bots</h3>
+<ul>
+<li><strong><code>bot.add</code></strong> - <em>emitted when a bot is added to the group</em>
+<ul>
+<li><code>user: User</code> - the user who added the bot</li>
+<li><code>bot: string</code> - the name of the added bot</li>
+</ul>
+</li>
+<li><strong><code>bot.del</code></strong> - <em>emitted when a bot is removed from the group</em>
+<ul>
+<li><code>user: User</code> - the user who removed the bot</li>
+<li><code>bot: string</code> - the name of the removed bot</li>
+</ul>
+</li>
+</ul>
+<h3 id="calendar"><a aria-hidden="true" class="anchor-heading" href="#calendar"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Calendar</h3>
+<ul>
+<li><strong><code>calendar.event.created</code></strong> - <em>emitted when a calendar event is created</em>
+<ul>
+<li><code>event: Object</code>
+<ul>
+<li><code>id: string</code> - the ID of the calendar event</li>
+<li><code>name: string</code> - the name of the calendar event</li>
+</ul>
+</li>
+<li><code>url: string</code> - a URL link to the calendar event</li>
+<li><code>user: UserWeird</code> - the user who created the event</li>
+</ul>
+</li>
+<li><strong><code>calendar.event.starting</code></strong> - <em>emitted when a calendar event is starting</em>
+<ul>
+<li><code>event_name: string</code> - the name of the event</li>
+<li><code>minutes: string</code> - the number of minutes until the event begins</li>
+</ul>
+</li>
+<li><strong><code>calendar.event.user.going</code></strong> - <em>emitted when a user RSVPs to an event as "going"</em>
+<ul>
+<li><code>event: Object</code>
+<ul>
+<li><code>id: string</code> - the ID of the calendar event</li>
+<li><code>name: string</code> - the name of the calendar event</li>
+</ul>
+</li>
+<li><code>user: UserWeird</code> - the user who RSVP'd</li>
+</ul>
+</li>
+<li><strong><code>calendar.event.user.not_going</code></strong> - <em>emitted when a user RSVPs to an event as "not going"</em>
+<ul>
+<li><code>event: Object</code>
+<ul>
+<li><code>id: string</code> - the ID of the calendar event</li>
+<li><code>name: string</code> - the name of the calendar event</li>
+</ul>
+</li>
+<li><code>user: UserWeird</code> - the user who RSVP'd</li>
+</ul>
+</li>
+<li><strong><code>calendar.event.user.undecided</code></strong> - <em>emitted when a user removes their RSVP from an event</em>
+<ul>
+<li><code>event: Object</code>
+<ul>
+<li><code>id: string</code> - the ID of the calendar event</li>
+<li><code>name: string</code> - the name of the calendar event</li>
+</ul>
+</li>
+<li><code>user: UserWeird</code> - the user who RSVP'd</li>
+</ul>
+</li>
+</ul>
+<h3 id="group"><a aria-hidden="true" class="anchor-heading" href="#group"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Group</h3>
+<ul>
+<li><strong><code>group.added_to_directory</code></strong> - <em>emitted when the group is added to a university directory</em>
+<ul>
+<li><code>user: User</code> - the user who added the group to the directory</li>
+<li><code>directory_name</code> - the name of the directory</li>
+</ul>
+</li>
+<li><strong><code>group.avatar_change</code></strong> - <em>emitted when the group avatar is updated</em>
+<ul>
+<li><code>user: User</code> - the user who changed the group avatar</li>
+<li><code>avatar_url: string</code> - the URL of the new avatar</li>
+</ul>
+</li>
+<li><strong><code>group.like_icon_set</code></strong> - <em>emitted when the group like icon is updated</em>
+<ul>
+<li><code>user: User</code> - the user who updated the like icon</li>
+<li><code>like_icon: Object</code>
+<ul>
+<li><code>pack_id: number</code></li>
+<li><code>pack_index: number</code></li>
+<li><code>type: string</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><code>group.name_change</code></strong> - <em>emitted when the group name is updated</em>
+<ul>
+<li><code>user: User</code> - the user who updated the group name</li>
+<li><code>name: string</code> - the new name of the group</li>
+</ul>
+</li>
+<li><strong><code>group.office_mode_disabled</code></strong> - <em>emitted when office mode is disabled in the group</em>
+<ul>
+<li><code>user: User</code> - the user who disabled office mode</li>
+</ul>
+</li>
+<li><strong><code>group.office_mode_enabled</code></strong> - <em>emitted when office mode is enabled in the group</em>
+<ul>
+<li><code>user: User</code> - the user who enabled office mode</li>
+</ul>
+</li>
+<li><strong><code>group.role_change_admin</code></strong> - <em>emitted when the owner promotes a member to the admin role</em>
+<ul>
+<li><code>user: User</code> - the user who initiated the change (the owner of the group)</li>
+<li><code>role: "admin"</code> - the role which was given (admin)</li>
+<li><code>member: User</code> - the member who received the role</li>
+</ul>
+</li>
+<li><strong><code>group.theme_change</code></strong> - <em>emitted when the group theme is updated</em>
+<ul>
+<li><code>user: User</code> - the user who changed the theme</li>
+<li><code>theme_name</code> - the name of the new theme</li>
+</ul>
+</li>
+<li><strong><code>group.topic_change</code></strong> - <em>emitted when the group topic is updated</em>
+<ul>
+<li><code>user: User</code> - the user who changed the topic</li>
+<li><code>topic: string</code> - the new topic for the group</li>
+</ul>
+</li>
+<li><strong><code>group.type_change</code></strong> - <em>emitted when the group type is updated</em>
+<ul>
+<li><code>user: User</code> - the user who initiated the change</li>
+<li><code>type: "closed" | "private"</code> - the new group type</li>
+</ul>
+</li>
+</ul>
+<h3 id="members"><a aria-hidden="true" class="anchor-heading" href="#members"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Members</h3>
+<ul>
+<li><strong><code>membership.announce.added</code></strong> - <em>emitted when one or more users are added to the group by an existing member</em>
+<ul>
+<li><code>added_users: User[]</code> - the user(s) who were added</li>
+<li><code>adder_user: User</code> - the member who added them</li>
+</ul>
+</li>
+<li><strong><code>membership.announce.joined</code></strong> - <em>emitted when a user joins the group from a share URL/token</em>
+<ul>
+<li><code>user: User</code> - the user who joined</li>
+</ul>
+</li>
+<li><strong><code>membership.announce.rejoined</code></strong> - <em>emitted when a former member who previously exited on their own, rejoins the group using the former group rejoin endpoint (or the "archive" in-app)</em>
+<ul>
+<li><code>user: User</code> - the user who rejoined</li>
+</ul>
+</li>
+<li><strong><code>membership.avatar_changed</code></strong> - <em>emitted when a member changes their avatar.</em> <strong>[DEPRECATED]</strong>
+<ul>
+<li><code>user: User</code> - the member who changed their avatar</li>
+<li><code>avatar_url: string</code> - the new avatar</li>
+<li><strong>NOTE:</strong> "avatar" here refers to a member's per-group avatar, not their "primary" user avatar which is used across all of GroupMe. This is similar to the distinction between a member's nickname in a group and their "global" user name associated with their account.</li>
+<li><strong>NOTE:</strong> This event is <strong>deprecated</strong>. It can still be found historically in old messages but is no longer used and will not be emitted in the future.</li>
+</ul>
+</li>
+<li><strong><code>membership.nickname_changed</code></strong> - <em>emitted when a member's nickname is updated</em>
+<ul>
+<li><code>user: User</code> - the member who changed their nickname</li>
+<li><code>name: string</code> - the new nickname for the member</li>
+</ul>
+</li>
+<li><strong><code>membership.notifications.autokicked</code></strong> - <em>emitted when an SMS user who had previously been added by an existing member using the SMS user's phone number, is autokicked (see membership states for more info)</em>
+<ul>
+<li><code>user: User</code> - the member who was autokicked</li>
+</ul>
+</li>
+<li><strong><code>membership.notifications.exited</code></strong> - <em>emitted when a member leaves the group on their own</em>
+<ul>
+<li><code>removed_user: User</code> - the member who left the group</li>
+</ul>
+</li>
+<li><strong><code>membership.notifications.removed</code></strong> - <em>emitted when a member is removed from the group by another member or admin</em>
+<ul>
+<li><code>remover_user: User</code> - the member who removed the other member</li>
+<li><code>removed_user: User</code> - the member who was removed</li>
+</ul>
+</li>
+</ul>
+<h3 id="message"><a aria-hidden="true" class="anchor-heading" href="#message"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Message</h3>
+<ul>
+<li><strong><code>message.deleted</code></strong> - <em>emitted when a message is deleted</em>
+<ul>
+<li><code>message_id: string</code> - the ID of the message</li>
+<li><code>deleted_at: number</code> - the timestamp when the message was deleted</li>
+<li><code>deletion_actor: "sender" | "system"</code> - the type of actor who deleted the message</li>
+<li><code>deleter_id: string</code> - the ID of the user who deleted the message</li>
+<li><strong>NOTE:</strong> <code>deleter_id</code> is always the message author ID, even if <code>deletion_actor</code> is set to <code>system</code>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="polls"><a aria-hidden="true" class="anchor-heading" href="#polls"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Polls</h3>
+<ul>
+<li><strong><code>poll.created</code></strong> - <em>emitted when a poll is created</em>
+<ul>
+<li><code>conversation: Object</code>
+<ul>
+<li><code>id: string</code> - the ID of the group this poll was created in</li>
+</ul>
+</li>
+<li><code>poll: Object</code>
+<ul>
+<li><code>id: string</code> - the ID of the poll that was created</li>
+<li><code>subject: string</code> - the question or prompt for the poll</li>
+</ul>
+</li>
+<li><code>user: UserWeird</code> - the user who created the poll</li>
+</ul>
+</li>
+<li><strong><code>poll.reminder</code></strong> - <em>emitted shortly before a poll expires</em>
+<ul>
+<li><code>conversation: Object</code>
+<ul>
+<li><code>id: string</code> - the ID of the group</li>
+</ul>
+</li>
+<li><code>poll: Object</code>
+<ul>
+<li><code>expiration: number</code> - the timestamp at which the poll will expire</li>
+<li><code>id: string</code> - the ID of the poll</li>
+<li><code>subject: string</code> - the question or prompt</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><code>poll.finished</code></strong> - <em>emitted when a poll is ended</em>
+<ul>
+<li><code>conversation: Object</code>
+<ul>
+<li><code>id: string</code> - the ID of the group</li>
+</ul>
+</li>
+<li><code>poll: Object</code>
+<ul>
+<li><code>id: string</code> - the ID of the poll</li>
+<li><code>subject: string</code> - the question or prompt</li>
+</ul>
+</li>
+<li><code>options: Object[]</code> - an array of <code>option</code> objects, each describing one option on the poll
+<ul>
+<li><code>id: string</code> - the ID of this option (IDs start at 1 and are sequential)</li>
+<li><code>title: string</code> - the text of this option</li>
+<li><code>votes?: number</code> - the number of votes this option received (never zero; only present if the option received at least one vote)</li>
+<li><code>voter_ids?: string[]</code> - the IDs of the users who voted for this option (never empty; only present if the option received at least vote AND the poll visibility is set to <code>public</code>)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="backlinks"><a aria-hidden="true" class="anchor-heading" href="#backlinks"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Backlinks</h2>
+<ul>
+<li><a href="/groupme-notes/notes/TC2DDp9795LJS0wkf4GkZ">Chat Message</a></li>
+</ul></div></div><div style="padding-left:10px;padding-right:10px" class="ant-col ant-col-xs-0 ant-col-md-4"><div><div class=""><div class="ant-anchor-wrapper" style="max-height:calc(100vh - 64px);z-index:1"><div class="ant-anchor"><div class="ant-anchor-ink"><span class="ant-anchor-ink-ball"></span></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#apijson-representation" title="API/JSON Representation">API/JSON Representation</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#event-types" title="Event types">Event types</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#bots" title="Bots">Bots</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#calendar" title="Calendar">Calendar</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#group" title="Group">Group</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#members" title="Members">Members</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#message" title="Message">Message</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#polls" title="Polls">Polls</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#backlinks" title="Backlinks">Backlinks</a></div></div></div></div></div></div></div></div></div></main><div class="ant-divider ant-divider-horizontal" role="separator"></div><footer class="ant-layout-footer" style="padding:0 24px 24px"></footer></section></section></section></section></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"note":{"id":"O2VnKphZ7jSbMIynkTn6b","title":"Event","vault":{"fsPath":"vault"},"type":"note","desc":"","links":[{"type":"wiki","from":{"fname":"group.event","id":"O2VnKphZ7jSbMIynkTn6b","vaultName":"vault"},"value":"group","alias":"group","position":{"start":{"line":1,"column":52,"offset":51},"end":{"line":1,"column":61,"offset":60},"indent":[]},"xvault":false,"sameFile":false,"to":{"fname":"group"}},{"type":"wiki","from":{"fname":"group.event","id":"O2VnKphZ7jSbMIynkTn6b","vaultName":"vault"},"value":"message","alias":"Messages","position":{"start":{"line":1,"column":93,"offset":92},"end":{"line":1,"column":113,"offset":112},"indent":[]},"xvault":false,"sameFile":false,"to":{"fname":"message"}},{"from":{"fname":"message.chat-message","vaultName":"vault"},"type":"backlink","position":{"start":{"line":26,"column":4,"offset":610},"end":{"line":26,"column":19,"offset":625},"indent":[]},"value":"group.event"}],"anchors":{"apijson-representation":{"type":"header","text":"API/JSON Representation","value":"apijson-representation","line":9,"column":0},"event-types":{"type":"header","text":"Event types","value":"event-types","line":18,"column":0},"bots":{"type":"header","text":"Bots","value":"bots","line":21,"column":0},"calendar":{"type":"header","text":"Calendar","value":"calendar","line":28,"column":0},"group":{"type":"header","text":"Group","value":"group","line":53,"column":0},"members":{"type":"header","text":"Members","value":"members","line":86,"column":0},"message":{"type":"header","text":"Message","value":"message","line":109,"column":0},"polls":{"type":"header","text":"Polls","value":"polls","line":116,"column":0}},"fname":"group.event","updated":1638932812446,"created":1638909094605,"parent":"UfTK0Ggs4Dxy7lLZfveNO","children":[],"data":{},"contentHash":"c8fcfee5b2a538bae7c1412d7927fd63","custom":{}},"body":"\u003ch1 id=\"event\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#event\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eEvent\u003c/h1\u003e\n\u003cp\u003eAn \u003cstrong\u003eevent\u003c/strong\u003e describes something that happens in a \u003ca href=\"/groupme-notes/notes/UfTK0Ggs4Dxy7lLZfveNO\"\u003eGroup\u003c/a\u003e. Events are emitted in special \u003ca href=\"/groupme-notes/notes/BR3F8919OQELtGFsOVIjB\"\u003eMessages\u003c/a\u003e sent by the system.\u003c/p\u003e\n\u003ch2 id=\"apijson-representation\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#apijson-representation\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eAPI/JSON Representation\u003c/h2\u003e\n\u003cpre class=\"language-ts\"\u003e\u003ccode class=\"language-ts\"\u003e\u003cspan class=\"token keyword module\"\u003eexport\u003c/span\u003e \u003cspan class=\"token keyword\"\u003einterface\u003c/span\u003e \u003cspan class=\"token class-name\"\u003e\u003cspan class=\"token maybe-class-name\"\u003eAPIEvent\u003c/span\u003e\u003c/span\u003e \u003cspan class=\"token punctuation\"\u003e{\u003c/span\u003e\n    type\u003cspan class=\"token operator\"\u003e:\u003c/span\u003e \u003cspan class=\"token builtin\"\u003estring\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e;\u003c/span\u003e\n    data\u003cspan class=\"token operator\"\u003e:\u003c/span\u003e \u003cspan class=\"token known-class-name class-name\"\u003eObject\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e;\u003c/span\u003e\n\u003cspan class=\"token punctuation\"\u003e}\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe \u003ccode\u003edata\u003c/code\u003e field is an object describing the details of the event. The structure of this object changes depending on the event type. You can find a list of known event types and their corresponding data object structures below.\u003c/p\u003e\n\u003ch2 id=\"event-types\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#event-types\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eEvent types\u003c/h2\u003e\n\u003cp\u003eThis list is by no means exhaustive. It contains only the events that were observed in my groups whenever this list was made (circa mid-2021).\u003c/p\u003e\n\u003ch3 id=\"bots\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#bots\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eBots\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003ebot.add\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when a bot is added to the group\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003euser: User\u003c/code\u003e - the user who added the bot\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003ebot: string\u003c/code\u003e - the name of the added bot\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003ebot.del\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when a bot is removed from the group\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003euser: User\u003c/code\u003e - the user who removed the bot\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003ebot: string\u003c/code\u003e - the name of the removed bot\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"calendar\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#calendar\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eCalendar\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003ecalendar.event.created\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when a calendar event is created\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eevent: Object\u003c/code\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eid: string\u003c/code\u003e - the ID of the calendar event\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003ename: string\u003c/code\u003e - the name of the calendar event\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003eurl: string\u003c/code\u003e - a URL link to the calendar event\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003euser: UserWeird\u003c/code\u003e - the user who created the event\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003ecalendar.event.starting\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when a calendar event is starting\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eevent_name: string\u003c/code\u003e - the name of the event\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003eminutes: string\u003c/code\u003e - the number of minutes until the event begins\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003ecalendar.event.user.going\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when a user RSVPs to an event as \"going\"\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eevent: Object\u003c/code\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eid: string\u003c/code\u003e - the ID of the calendar event\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003ename: string\u003c/code\u003e - the name of the calendar event\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003euser: UserWeird\u003c/code\u003e - the user who RSVP'd\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003ecalendar.event.user.not_going\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when a user RSVPs to an event as \"not going\"\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eevent: Object\u003c/code\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eid: string\u003c/code\u003e - the ID of the calendar event\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003ename: string\u003c/code\u003e - the name of the calendar event\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003euser: UserWeird\u003c/code\u003e - the user who RSVP'd\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003ecalendar.event.user.undecided\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when a user removes their RSVP from an event\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eevent: Object\u003c/code\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eid: string\u003c/code\u003e - the ID of the calendar event\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003ename: string\u003c/code\u003e - the name of the calendar event\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003euser: UserWeird\u003c/code\u003e - the user who RSVP'd\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"group\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#group\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eGroup\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003egroup.added_to_directory\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when the group is added to a university directory\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003euser: User\u003c/code\u003e - the user who added the group to the directory\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003edirectory_name\u003c/code\u003e - the name of the directory\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003egroup.avatar_change\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when the group avatar is updated\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003euser: User\u003c/code\u003e - the user who changed the group avatar\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003eavatar_url: string\u003c/code\u003e - the URL of the new avatar\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003egroup.like_icon_set\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when the group like icon is updated\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003euser: User\u003c/code\u003e - the user who updated the like icon\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003elike_icon: Object\u003c/code\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003epack_id: number\u003c/code\u003e\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003epack_index: number\u003c/code\u003e\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003etype: string\u003c/code\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003egroup.name_change\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when the group name is updated\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003euser: User\u003c/code\u003e - the user who updated the group name\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003ename: string\u003c/code\u003e - the new name of the group\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003egroup.office_mode_disabled\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when office mode is disabled in the group\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003euser: User\u003c/code\u003e - the user who disabled office mode\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003egroup.office_mode_enabled\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when office mode is enabled in the group\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003euser: User\u003c/code\u003e - the user who enabled office mode\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003egroup.role_change_admin\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when the owner promotes a member to the admin role\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003euser: User\u003c/code\u003e - the user who initiated the change (the owner of the group)\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003erole: \"admin\"\u003c/code\u003e - the role which was given (admin)\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003emember: User\u003c/code\u003e - the member who received the role\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003egroup.theme_change\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when the group theme is updated\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003euser: User\u003c/code\u003e - the user who changed the theme\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003etheme_name\u003c/code\u003e - the name of the new theme\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003egroup.topic_change\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when the group topic is updated\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003euser: User\u003c/code\u003e - the user who changed the topic\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003etopic: string\u003c/code\u003e - the new topic for the group\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003egroup.type_change\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when the group type is updated\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003euser: User\u003c/code\u003e - the user who initiated the change\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003etype: \"closed\" | \"private\"\u003c/code\u003e - the new group type\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"members\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#members\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eMembers\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003emembership.announce.added\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when one or more users are added to the group by an existing member\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eadded_users: User[]\u003c/code\u003e - the user(s) who were added\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003eadder_user: User\u003c/code\u003e - the member who added them\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003emembership.announce.joined\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when a user joins the group from a share URL/token\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003euser: User\u003c/code\u003e - the user who joined\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003emembership.announce.rejoined\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when a former member who previously exited on their own, rejoins the group using the former group rejoin endpoint (or the \"archive\" in-app)\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003euser: User\u003c/code\u003e - the user who rejoined\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003emembership.avatar_changed\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when a member changes their avatar.\u003c/em\u003e \u003cstrong\u003e[DEPRECATED]\u003c/strong\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003euser: User\u003c/code\u003e - the member who changed their avatar\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003eavatar_url: string\u003c/code\u003e - the new avatar\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eNOTE:\u003c/strong\u003e \"avatar\" here refers to a member's per-group avatar, not their \"primary\" user avatar which is used across all of GroupMe. This is similar to the distinction between a member's nickname in a group and their \"global\" user name associated with their account.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eNOTE:\u003c/strong\u003e This event is \u003cstrong\u003edeprecated\u003c/strong\u003e. It can still be found historically in old messages but is no longer used and will not be emitted in the future.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003emembership.nickname_changed\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when a member's nickname is updated\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003euser: User\u003c/code\u003e - the member who changed their nickname\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003ename: string\u003c/code\u003e - the new nickname for the member\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003emembership.notifications.autokicked\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when an SMS user who had previously been added by an existing member using the SMS user's phone number, is autokicked (see membership states for more info)\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003euser: User\u003c/code\u003e - the member who was autokicked\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003emembership.notifications.exited\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when a member leaves the group on their own\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eremoved_user: User\u003c/code\u003e - the member who left the group\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003emembership.notifications.removed\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when a member is removed from the group by another member or admin\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eremover_user: User\u003c/code\u003e - the member who removed the other member\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003eremoved_user: User\u003c/code\u003e - the member who was removed\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"message\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#message\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eMessage\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003emessage.deleted\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when a message is deleted\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003emessage_id: string\u003c/code\u003e - the ID of the message\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003edeleted_at: number\u003c/code\u003e - the timestamp when the message was deleted\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003edeletion_actor: \"sender\" | \"system\"\u003c/code\u003e - the type of actor who deleted the message\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003edeleter_id: string\u003c/code\u003e - the ID of the user who deleted the message\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eNOTE:\u003c/strong\u003e \u003ccode\u003edeleter_id\u003c/code\u003e is always the message author ID, even if \u003ccode\u003edeletion_actor\u003c/code\u003e is set to \u003ccode\u003esystem\u003c/code\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"polls\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#polls\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003ePolls\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003epoll.created\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when a poll is created\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003econversation: Object\u003c/code\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eid: string\u003c/code\u003e - the ID of the group this poll was created in\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003epoll: Object\u003c/code\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eid: string\u003c/code\u003e - the ID of the poll that was created\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003esubject: string\u003c/code\u003e - the question or prompt for the poll\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003euser: UserWeird\u003c/code\u003e - the user who created the poll\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003epoll.reminder\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted shortly before a poll expires\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003econversation: Object\u003c/code\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eid: string\u003c/code\u003e - the ID of the group\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003epoll: Object\u003c/code\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eexpiration: number\u003c/code\u003e - the timestamp at which the poll will expire\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003eid: string\u003c/code\u003e - the ID of the poll\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003esubject: string\u003c/code\u003e - the question or prompt\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003epoll.finished\u003c/code\u003e\u003c/strong\u003e - \u003cem\u003eemitted when a poll is ended\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003econversation: Object\u003c/code\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eid: string\u003c/code\u003e - the ID of the group\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003epoll: Object\u003c/code\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eid: string\u003c/code\u003e - the ID of the poll\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003esubject: string\u003c/code\u003e - the question or prompt\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003eoptions: Object[]\u003c/code\u003e - an array of \u003ccode\u003eoption\u003c/code\u003e objects, each describing one option on the poll\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eid: string\u003c/code\u003e - the ID of this option (IDs start at 1 and are sequential)\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003etitle: string\u003c/code\u003e - the text of this option\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003evotes?: number\u003c/code\u003e - the number of votes this option received (never zero; only present if the option received at least one vote)\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003evoter_ids?: string[]\u003c/code\u003e - the IDs of the users who voted for this option (never empty; only present if the option received at least vote AND the poll visibility is set to \u003ccode\u003epublic\u003c/code\u003e)\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr\u003e\n\u003ch2 id=\"backlinks\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#backlinks\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eBacklinks\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"/groupme-notes/notes/TC2DDp9795LJS0wkf4GkZ\"\u003eChat Message\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e","noteIndex":{"id":"BtqrGXASMeX2jK83wQjZK","title":"Root","vault":{"fsPath":"vault"},"type":"note","desc":"","links":[],"anchors":{"groupme-api-notes":{"type":"header","text":"GroupMe API Notes","value":"groupme-api-notes","line":7,"column":0}},"fname":"root","updated":1638496239066,"created":1638476729257,"parent":null,"children":["HiWRA7xMsjTJ0cFnQPkf1","1VSZbfRlK043L5qm9ct11","ccuZY1G3VSd9q0MSiTnft","UfTK0Ggs4Dxy7lLZfveNO","ORmwtXvQkZd5Qs4hm7qAE","BR3F8919OQELtGFsOVIjB","ErfIZMzFqiWTHR5pDIkZA"],"data":{},"contentHash":"4aaae18eacf93f60e182aa855212677a","custom":{"nav_order":0,"permalink":"/"},"body":"# GroupMe API Notes\n\nThis site is a public repository of my notes and research on the GroupMe API throughout the development of [node-groupme](https://github.com/groupme-js/node-groupme).\n\nHave a look around by clicking on whatever piques your interest in the sidebar, or check out the \"children\" list below to start exploring.\n"},"collectionChildren":null,"customHeadContent":null,"config":{"version":4,"useFMTitle":true,"useNoteTitleForLink":true,"mermaid":true,"useKatex":true,"dev":{"enablePreviewV2":true},"site":{"copyAssets":true,"siteHierarchies":["root"],"siteRootDir":"docs","usePrettyRefs":true,"title":"Dendron","description":"Personal knowledge space","siteLastModified":true,"gh_edit_branch":"main","siteUrl":"https://not-so-smart.github.io","assetsPrefix":"/groupme-notes","usePrettyLinks":true,"siteNotesDir":"notes","siteFaviconPath":"favicon.ico","gh_edit_link":true,"gh_edit_link_text":"Edit this page on GitHub","gh_root":"docs/","gh_edit_view_mode":"edit","writeStubs":true,"siteIndex":"root"},"commands":{"lookup":{"note":{"selectionMode":"extract","confirmVaultOnCreate":false,"leaveTrace":false,"bubbleUpCreateNew":true,"fuzzThreshold":0.2}},"randomNote":{},"insertNote":{"initialValue":"templates"},"insertNoteLink":{"aliasMode":"none","enableMultiSelect":false},"insertNoteIndex":{"enableMarker":false}},"workspace":{"vaults":[{"fsPath":"vault"}],"journal":{"dailyDomain":"daily","name":"journal","dateFormat":"y.MM.dd","addBehavior":"childOfDomain"},"scratch":{"name":"scratch","dateFormat":"y.MM.dd.HHmmss","addBehavior":"asOwnDomain"},"task":{"name":"","dateFormat":"","addBehavior":"childOfCurrent","statusSymbols":{"":" ","wip":"w","done":"x","assigned":"a","moved":"m","blocked":"b","delegated":"l","dropped":"d","pending":"y"},"prioritySymbols":{"H":"high","M":"medium","L":"low"},"todoIntegration":false,"createTaskSelectionType":"selection2link"},"graph":{"zoomSpeed":1},"enableAutoCreateOnDefinition":false,"enableXVaultWikiLink":false,"enableRemoteVaultInit":true,"enableUserTags":true,"enableHashTags":true,"workspaceVaultSyncMode":"noCommit","enableAutoFoldFrontmatter":false,"maxPreviewsCached":10,"maxNoteLength":204800,"seeds":{"dendron.templates":{}},"enableEditorDecorations":true},"preview":{"enableFMTitle":true,"enableNoteTitleForLink":true,"enableMermaid":true,"enablePrettyRefs":true,"enableKatex":true}}},"__N_SSG":true},"page":"/notes/[id]","query":{"id":"O2VnKphZ7jSbMIynkTn6b"},"buildId":"He098qOjAA6fjrBkBo0y1","assetPrefix":"/groupme-notes","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>

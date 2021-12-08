@@ -1,8 +1,32 @@
 <h1 id="chat"><a aria-hidden="true" class="anchor-heading" href="#chat"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Chat</h1>
-<p>A chat is a unique <a href="/groupme-notes/notes/ccuZY1G3VSd9q0MSiTnft">Conversation</a> between two <a href="/groupme-notes/notes/ErfIZMzFqiWTHR5pDIkZA">Users</a>.</p>
+<p>A <strong>chat</strong> is a unique <a href="/groupme-notes/notes/ccuZY1G3VSd9q0MSiTnft">Conversation</a> between two <a href="/groupme-notes/notes/ErfIZMzFqiWTHR5pDIkZA">Users</a>.</p>
 <p>A chat represents a distinct relationship between exactly two users; any two users may have only one chat between them, and any chat may not include more than two users.</p>
+<h2 id="apijson-representation"><a aria-hidden="true" class="anchor-heading" href="#apijson-representation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>API/JSON Representation</h2>
+<pre class="language-ts"><code class="language-ts"><span class="token keyword module">export</span> <span class="token keyword">interface</span> <span class="token class-name"><span class="token maybe-class-name">APIChat</span></span> <span class="token punctuation">{</span>
+    last_message<span class="token operator">:</span> <span class="token maybe-class-name">APIChatMessage</span><span class="token punctuation">;</span> <span class="token comment">// See [1]</span>
+    message_deletion_mode<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">"creator"</span><span class="token punctuation">,</span>
+        <span class="token string">"sender"</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">;</span>
+    message_deletion_period<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+    messages_count<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+    other_user<span class="token operator">:</span> <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+        name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+        avatar_url<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    created_at<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+    updated_at<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ol>
+<li><a href="/groupme-notes/notes/BR3F8919OQELtGFsOVIjB">Message</a></li>
+</ol>
+<h2 id="representation-in-node-groupme"><a aria-hidden="true" class="anchor-heading" href="#representation-in-node-groupme"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Representation in <code>node-groupme</code></h2>
+<p><a href="https://groupme.js.org/classes/Chat">https://groupme.js.org/classes/Chat</a></p>
 <hr>
 <h2 id="backlinks"><a aria-hidden="true" class="anchor-heading" href="#backlinks"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Backlinks</h2>
 <ul>
 <li><a href="/groupme-notes/notes/ccuZY1G3VSd9q0MSiTnft">Conversation</a></li>
+<li><a href="/groupme-notes/notes/TC2DDp9795LJS0wkf4GkZ">Chat Message</a></li>
 </ul>

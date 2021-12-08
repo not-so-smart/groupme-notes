@@ -1,0 +1,272 @@
+<h1 id="event"><a aria-hidden="true" class="anchor-heading" href="#event"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Event</h1>
+<p>An <strong>event</strong> describes something that happens in a <a href="/groupme-notes/notes/UfTK0Ggs4Dxy7lLZfveNO">Group</a>. Events are emitted in special <a href="/groupme-notes/notes/BR3F8919OQELtGFsOVIjB">Messages</a> sent by the system.</p>
+<h2 id="apijson-representation"><a aria-hidden="true" class="anchor-heading" href="#apijson-representation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>API/JSON Representation</h2>
+<pre class="language-ts"><code class="language-ts"><span class="token keyword module">export</span> <span class="token keyword">interface</span> <span class="token class-name"><span class="token maybe-class-name">APIEvent</span></span> <span class="token punctuation">{</span>
+    type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    data<span class="token operator">:</span> <span class="token known-class-name class-name">Object</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The <code>data</code> field is an object describing the details of the event. The structure of this object changes depending on the event type. You can find a list of known event types and their corresponding data object structures below.</p>
+<h2 id="event-types"><a aria-hidden="true" class="anchor-heading" href="#event-types"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Event types</h2>
+<p>This list is by no means exhaustive. It contains only the events that were observed in my groups whenever this list was made (circa mid-2021).</p>
+<h3 id="bots"><a aria-hidden="true" class="anchor-heading" href="#bots"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Bots</h3>
+<ul>
+<li><strong><code>bot.add</code></strong> - <em>emitted when a bot is added to the group</em>
+<ul>
+<li><code>user: User</code> - the user who added the bot</li>
+<li><code>bot: string</code> - the name of the added bot</li>
+</ul>
+</li>
+<li><strong><code>bot.del</code></strong> - <em>emitted when a bot is removed from the group</em>
+<ul>
+<li><code>user: User</code> - the user who removed the bot</li>
+<li><code>bot: string</code> - the name of the removed bot</li>
+</ul>
+</li>
+</ul>
+<h3 id="calendar"><a aria-hidden="true" class="anchor-heading" href="#calendar"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Calendar</h3>
+<ul>
+<li><strong><code>calendar.event.created</code></strong> - <em>emitted when a calendar event is created</em>
+<ul>
+<li><code>event: Object</code>
+<ul>
+<li><code>id: string</code> - the ID of the calendar event</li>
+<li><code>name: string</code> - the name of the calendar event</li>
+</ul>
+</li>
+<li><code>url: string</code> - a URL link to the calendar event</li>
+<li><code>user: UserWeird</code> - the user who created the event</li>
+</ul>
+</li>
+<li><strong><code>calendar.event.starting</code></strong> - <em>emitted when a calendar event is starting</em>
+<ul>
+<li><code>event_name: string</code> - the name of the event</li>
+<li><code>minutes: string</code> - the number of minutes until the event begins</li>
+</ul>
+</li>
+<li><strong><code>calendar.event.user.going</code></strong> - <em>emitted when a user RSVPs to an event as "going"</em>
+<ul>
+<li><code>event: Object</code>
+<ul>
+<li><code>id: string</code> - the ID of the calendar event</li>
+<li><code>name: string</code> - the name of the calendar event</li>
+</ul>
+</li>
+<li><code>user: UserWeird</code> - the user who RSVP'd</li>
+</ul>
+</li>
+<li><strong><code>calendar.event.user.not_going</code></strong> - <em>emitted when a user RSVPs to an event as "not going"</em>
+<ul>
+<li><code>event: Object</code>
+<ul>
+<li><code>id: string</code> - the ID of the calendar event</li>
+<li><code>name: string</code> - the name of the calendar event</li>
+</ul>
+</li>
+<li><code>user: UserWeird</code> - the user who RSVP'd</li>
+</ul>
+</li>
+<li><strong><code>calendar.event.user.undecided</code></strong> - <em>emitted when a user removes their RSVP from an event</em>
+<ul>
+<li><code>event: Object</code>
+<ul>
+<li><code>id: string</code> - the ID of the calendar event</li>
+<li><code>name: string</code> - the name of the calendar event</li>
+</ul>
+</li>
+<li><code>user: UserWeird</code> - the user who RSVP'd</li>
+</ul>
+</li>
+</ul>
+<h3 id="group"><a aria-hidden="true" class="anchor-heading" href="#group"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Group</h3>
+<ul>
+<li><strong><code>group.added_to_directory</code></strong> - <em>emitted when the group is added to a university directory</em>
+<ul>
+<li><code>user: User</code> - the user who added the group to the directory</li>
+<li><code>directory_name</code> - the name of the directory</li>
+</ul>
+</li>
+<li><strong><code>group.avatar_change</code></strong> - <em>emitted when the group avatar is updated</em>
+<ul>
+<li><code>user: User</code> - the user who changed the group avatar</li>
+<li><code>avatar_url: string</code> - the URL of the new avatar</li>
+</ul>
+</li>
+<li><strong><code>group.like_icon_set</code></strong> - <em>emitted when the group like icon is updated</em>
+<ul>
+<li><code>user: User</code> - the user who updated the like icon</li>
+<li><code>like_icon: Object</code>
+<ul>
+<li><code>pack_id: number</code></li>
+<li><code>pack_index: number</code></li>
+<li><code>type: string</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><code>group.name_change</code></strong> - <em>emitted when the group name is updated</em>
+<ul>
+<li><code>user: User</code> - the user who updated the group name</li>
+<li><code>name: string</code> - the new name of the group</li>
+</ul>
+</li>
+<li><strong><code>group.office_mode_disabled</code></strong> - <em>emitted when office mode is disabled in the group</em>
+<ul>
+<li><code>user: User</code> - the user who disabled office mode</li>
+</ul>
+</li>
+<li><strong><code>group.office_mode_enabled</code></strong> - <em>emitted when office mode is enabled in the group</em>
+<ul>
+<li><code>user: User</code> - the user who enabled office mode</li>
+</ul>
+</li>
+<li><strong><code>group.role_change_admin</code></strong> - <em>emitted when the owner promotes a member to the admin role</em>
+<ul>
+<li><code>user: User</code> - the user who initiated the change (the owner of the group)</li>
+<li><code>role: "admin"</code> - the role which was given (admin)</li>
+<li><code>member: User</code> - the member who received the role</li>
+</ul>
+</li>
+<li><strong><code>group.theme_change</code></strong> - <em>emitted when the group theme is updated</em>
+<ul>
+<li><code>user: User</code> - the user who changed the theme</li>
+<li><code>theme_name</code> - the name of the new theme</li>
+</ul>
+</li>
+<li><strong><code>group.topic_change</code></strong> - <em>emitted when the group topic is updated</em>
+<ul>
+<li><code>user: User</code> - the user who changed the topic</li>
+<li><code>topic: string</code> - the new topic for the group</li>
+</ul>
+</li>
+<li><strong><code>group.type_change</code></strong> - <em>emitted when the group type is updated</em>
+<ul>
+<li><code>user: User</code> - the user who initiated the change</li>
+<li><code>type: "closed" | "private"</code> - the new group type</li>
+</ul>
+</li>
+</ul>
+<h3 id="members"><a aria-hidden="true" class="anchor-heading" href="#members"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Members</h3>
+<ul>
+<li><strong><code>membership.announce.added</code></strong> - <em>emitted when one or more users are added to the group by an existing member</em>
+<ul>
+<li><code>added_users: User[]</code> - the user(s) who were added</li>
+<li><code>adder_user: User</code> - the member who added them</li>
+</ul>
+</li>
+<li><strong><code>membership.announce.joined</code></strong> - <em>emitted when a user joins the group from a share URL/token</em>
+<ul>
+<li><code>user: User</code> - the user who joined</li>
+</ul>
+</li>
+<li><strong><code>membership.announce.rejoined</code></strong> - <em>emitted when a former member who previously exited on their own, rejoins the group using the former group rejoin endpoint (or the "archive" in-app)</em>
+<ul>
+<li><code>user: User</code> - the user who rejoined</li>
+</ul>
+</li>
+<li><strong><code>membership.avatar_changed</code></strong> - <em>emitted when a member changes their avatar.</em> <strong>[DEPRECATED]</strong>
+<ul>
+<li><code>user: User</code> - the member who changed their avatar</li>
+<li><code>avatar_url: string</code> - the new avatar</li>
+<li><strong>NOTE:</strong> "avatar" here refers to a member's per-group avatar, not their "primary" user avatar which is used across all of GroupMe. This is similar to the distinction between a member's nickname in a group and their "global" user name associated with their account.</li>
+<li><strong>NOTE:</strong> This event is <strong>deprecated</strong>. It can still be found historically in old messages but is no longer used and will not be emitted in the future.</li>
+</ul>
+</li>
+<li><strong><code>membership.nickname_changed</code></strong> - <em>emitted when a member's nickname is updated</em>
+<ul>
+<li><code>user: User</code> - the member who changed their nickname</li>
+<li><code>name: string</code> - the new nickname for the member</li>
+</ul>
+</li>
+<li><strong><code>membership.notifications.autokicked</code></strong> - <em>emitted when an SMS user who had previously been added by an existing member using the SMS user's phone number, is autokicked (see membership states for more info)</em>
+<ul>
+<li><code>user: User</code> - the member who was autokicked</li>
+</ul>
+</li>
+<li><strong><code>membership.notifications.exited</code></strong> - <em>emitted when a member leaves the group on their own</em>
+<ul>
+<li><code>removed_user: User</code> - the member who left the group</li>
+</ul>
+</li>
+<li><strong><code>membership.notifications.removed</code></strong> - <em>emitted when a member is removed from the group by another member or admin</em>
+<ul>
+<li><code>remover_user: User</code> - the member who removed the other member</li>
+<li><code>removed_user: User</code> - the member who was removed</li>
+</ul>
+</li>
+</ul>
+<h3 id="message"><a aria-hidden="true" class="anchor-heading" href="#message"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Message</h3>
+<ul>
+<li><strong><code>message.deleted</code></strong> - <em>emitted when a message is deleted</em>
+<ul>
+<li><code>message_id: string</code> - the ID of the message</li>
+<li><code>deleted_at: number</code> - the timestamp when the message was deleted</li>
+<li><code>deletion_actor: "sender" | "system"</code> - the type of actor who deleted the message</li>
+<li><code>deleter_id: string</code> - the ID of the user who deleted the message</li>
+<li><strong>NOTE:</strong> <code>deleter_id</code> is always the message author ID, even if <code>deletion_actor</code> is set to <code>system</code>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="polls"><a aria-hidden="true" class="anchor-heading" href="#polls"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Polls</h3>
+<ul>
+<li><strong><code>poll.created</code></strong> - <em>emitted when a poll is created</em>
+<ul>
+<li><code>conversation: Object</code>
+<ul>
+<li><code>id: string</code> - the ID of the group this poll was created in</li>
+</ul>
+</li>
+<li><code>poll: Object</code>
+<ul>
+<li><code>id: string</code> - the ID of the poll that was created</li>
+<li><code>subject: string</code> - the question or prompt for the poll</li>
+</ul>
+</li>
+<li><code>user: UserWeird</code> - the user who created the poll</li>
+</ul>
+</li>
+<li><strong><code>poll.reminder</code></strong> - <em>emitted shortly before a poll expires</em>
+<ul>
+<li><code>conversation: Object</code>
+<ul>
+<li><code>id: string</code> - the ID of the group</li>
+</ul>
+</li>
+<li><code>poll: Object</code>
+<ul>
+<li><code>expiration: number</code> - the timestamp at which the poll will expire</li>
+<li><code>id: string</code> - the ID of the poll</li>
+<li><code>subject: string</code> - the question or prompt</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><code>poll.finished</code></strong> - <em>emitted when a poll is ended</em>
+<ul>
+<li><code>conversation: Object</code>
+<ul>
+<li><code>id: string</code> - the ID of the group</li>
+</ul>
+</li>
+<li><code>poll: Object</code>
+<ul>
+<li><code>id: string</code> - the ID of the poll</li>
+<li><code>subject: string</code> - the question or prompt</li>
+</ul>
+</li>
+<li><code>options: Object[]</code> - an array of <code>option</code> objects, each describing one option on the poll
+<ul>
+<li><code>id: string</code> - the ID of this option (IDs start at 1 and are sequential)</li>
+<li><code>title: string</code> - the text of this option</li>
+<li><code>votes?: number</code> - the number of votes this option received (never zero; only present if the option received at least one vote)</li>
+<li><code>voter_ids?: string[]</code> - the IDs of the users who voted for this option (never empty; only present if the option received at least vote AND the poll visibility is set to <code>public</code>)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="backlinks"><a aria-hidden="true" class="anchor-heading" href="#backlinks"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Backlinks</h2>
+<ul>
+<li><a href="/groupme-notes/notes/TC2DDp9795LJS0wkf4GkZ">Chat Message</a></li>
+</ul>

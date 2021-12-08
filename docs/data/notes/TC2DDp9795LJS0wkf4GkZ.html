@@ -1,0 +1,27 @@
+<h1 id="chat-message"><a aria-hidden="true" class="anchor-heading" href="#chat-message"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Chat Message</h1>
+<p>A <strong>chat message</strong> is a <a href="/groupme-notes/notes/BR3F8919OQELtGFsOVIjB">Message</a> sent in a <a href="/groupme-notes/notes/1VSZbfRlK043L5qm9ct11">Chat</a>.</p>
+<h2 id="apijson-representation"><a aria-hidden="true" class="anchor-heading" href="#apijson-representation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>API/JSON Representation</h2>
+<pre class="language-ts"><code class="language-ts"><span class="token keyword module">export</span> <span class="token keyword">interface</span> <span class="token class-name"><span class="token maybe-class-name">APIChatMessage</span></span> <span class="token punctuation">{</span>
+    attachments<span class="token operator">:</span> <span class="token maybe-class-name">APIAttachment</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// See [1]</span>
+    avatar_url<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token keyword null nil">null</span><span class="token punctuation">;</span>
+    created_at<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+    favorited_by<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    conversation_id<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    id<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    sender_id<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    sender_type<span class="token operator">:</span> <span class="token string">"service"</span> <span class="token operator">|</span> <span class="token string">"system"</span> <span class="token operator">|</span> <span class="token string">"user"</span><span class="token punctuation">;</span>
+    source_guid<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    recipient_id<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    text<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token keyword null nil">null</span><span class="token punctuation">;</span>
+    user_id<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    event<span class="token operator">?</span><span class="token operator">:</span> <span class="token maybe-class-name">APIGroupEvent</span><span class="token punctuation">;</span> <span class="token comment">// See [2]</span>
+    deleted_at<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+    deletion_actor<span class="token operator">?</span><span class="token operator">:</span> <span class="token string">"sender"</span> <span class="token operator">|</span> <span class="token string">"system"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ol>
+<li><a href="/groupme-notes/notes/HiWRA7xMsjTJ0cFnQPkf1">Attachment</a></li>
+<li><a href="/groupme-notes/notes/O2VnKphZ7jSbMIynkTn6b">Event</a></li>
+</ol>
+<h2 id="representation-in-node-groupme"><a aria-hidden="true" class="anchor-heading" href="#representation-in-node-groupme"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Representation in <code>node-groupme</code></h2>

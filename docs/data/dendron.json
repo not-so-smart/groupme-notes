@@ -36,7 +36,8 @@
         "selectionMode": "extract",
         "confirmVaultOnCreate": false,
         "leaveTrace": false,
-        "bubbleUpCreateNew": true
+        "bubbleUpCreateNew": true,
+        "fuzzThreshold": 0.2
       }
     },
     "randomNote": {},
@@ -105,7 +106,8 @@
     "maxNoteLength": 204800,
     "seeds": {
       "dendron.templates": {}
-    }
+    },
+    "enableEditorDecorations": true
   },
   "preview": {
     "enableFMTitle": true,

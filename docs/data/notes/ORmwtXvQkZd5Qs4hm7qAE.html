@@ -1,5 +1,25 @@
 <h1 id="member"><a aria-hidden="true" class="anchor-heading" href="#member"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Member</h1>
-<p>A member is an entity representing a single relationship between a <a href="/groupme-notes/notes/ErfIZMzFqiWTHR5pDIkZA">User</a> and a <a href="/groupme-notes/notes/UfTK0Ggs4Dxy7lLZfveNO">Group</a>.</p>
+<p>A <strong>member</strong> is an entity representing a single relationship between a <a href="/groupme-notes/notes/ErfIZMzFqiWTHR5pDIkZA">User</a> and a <a href="/groupme-notes/notes/UfTK0Ggs4Dxy7lLZfveNO">Group</a>.</p>
+<h2 id="apijson-representation"><a aria-hidden="true" class="anchor-heading" href="#apijson-representation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>API/JSON Representation</h2>
+<pre class="language-ts"><code class="language-ts"><span class="token keyword module">export</span> <span class="token keyword">interface</span> <span class="token class-name"><span class="token maybe-class-name">APIMember</span></span> <span class="token punctuation">{</span>
+    autokicked<span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span>
+    id<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    image_url<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token keyword null nil">null</span><span class="token punctuation">;</span>
+    muted<span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span>
+    name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    nickname<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    roles<span class="token operator">:</span> <span class="token maybe-class-name">MemberRole</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    user_id<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword module">export</span> <span class="token keyword">enum</span> <span class="token maybe-class-name">MemberRole</span> <span class="token punctuation">{</span>
+    <span class="token maybe-class-name">Admin</span> <span class="token operator">=</span> <span class="token string">"admin"</span><span class="token punctuation">,</span>
+    <span class="token maybe-class-name">Owner</span> <span class="token operator">=</span> <span class="token string">"owner"</span><span class="token punctuation">,</span>
+    <span class="token maybe-class-name">User</span> <span class="token operator">=</span> <span class="token string">"user"</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="representation-in-node-groupme"><a aria-hidden="true" class="anchor-heading" href="#representation-in-node-groupme"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Representation in <code>node-groupme</code></h2>
+<p><a href="https://groupme.js.org/classes/Member">https://groupme.js.org/classes/Member</a></p>
 <hr>
 <h2 id="backlinks"><a aria-hidden="true" class="anchor-heading" href="#backlinks"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Backlinks</h2>
 <ul>
